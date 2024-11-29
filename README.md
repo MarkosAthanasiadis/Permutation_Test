@@ -35,32 +35,21 @@ The **Significance Testing Framework** is a Python-based tool designed for permu
    #### Using `conda`:
    If you prefer `conda`, use the provided environment file to create a new environment:
    ```bash
-   conda env create -f significance-testing.yml
-   conda activate significance-testing
+   conda env create -f env_ma.yml
 
 ---
 
 ## Usage
 
 1. **Prepare Input Parameters**:
-   Create a parameter file (e.g., `params.txt`) with the following format:
-   ```
-   core id: 4
-   main path: /path/to/data
-   dataset name: hello_world
-   subsamplings #: 100
-   shuffle #: 1000
-   shuffle id: full
-   model id: model_type
-   learning rate: 0.01
-   epochs #: 10
-   ```
+   Create a parameter file (see `parameters.yml`) with the suggested format.
+
 Note: Ensure your dataset (e.g., hello_world.pkl) is a valid Python pickle file containing a dictionary with keys **data** and **labels** that match the expected format (see hello_world.pkl).
 
 2. **Run the Permutation Test**:
    Execute the test using the `run_test.py` script:
    ```bash
-   python significance/run_test.py
+   python run_test.py
    ```
    You will be prompted to enter the parameter file name (parameters.yml).
 

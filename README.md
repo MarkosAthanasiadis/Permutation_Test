@@ -64,20 +64,18 @@ Note: Ensure your dataset (e.g., hello_world.pkl) is a valid Python pickle file 
 
 ```
 permutation-test/
-├── significance/
-│   ├── __init__.py
-│   ├── run_test.py        # Main script for running the permutation test
-│   ├── main.py            # Core computation logic
-│   ├── utils/             # Helper modules
-│       ├── shuffle_labels.py
-│       ├── model_functions.py
-│       ├── pvalue.py
-│       ├── data_loader.py
-│       └── timer.py
-├── requirements.txt       # Dependencies
+├── run_test.py        # Main script for running the permutation test
+├── main.py            # Core computation logic
+├── utils/             # Helper modules
+│   ├── shuffle_labels.py
+│   ├── model_functions.py
+│   ├── pvalue.py
+│   ├── data_loader.py
+│   └── timer.py
+├── requirements_ma.txt    # pip Dependencies
+├── env_ma.yml             # conda environment for Dependencies
 ├── README.md              # Project documentation
-├── LICENSE                # License for the project
-└── setup.py               # Installation script
+└── LICENSE                # License for the project
 ```
 
 ---

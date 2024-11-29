@@ -29,7 +29,7 @@ The **Significance Testing Framework** is a Python-based tool designed for permu
    #### Using `pip`:
    If you prefer `pip`, use the `requirements.txt` file:
    ```bash
-   pip install -r requirements.txt
+   pip install -r requirements_ma.txt
    ```
 
    #### Using `conda`:
